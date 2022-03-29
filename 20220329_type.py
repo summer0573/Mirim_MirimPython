@@ -18,5 +18,5 @@ print(type('1027')) #<class 'str'>
 print(10/27) #java: 0, python:0.37037037037037035
 print(27/10) #java: 2, python:2.7
 print(27//10) #python: 나눈 몫: 2
-print(27%10) #python: 나머지:
-print(type(27/10))
+print(27%10) #python: 나머지: 7
+print(type(27/10)) #c<lass 'float'>
