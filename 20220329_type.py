@@ -4,7 +4,7 @@ age = 18
 height = 160.2
 
 #문자
-name = '정현진'
+name = '정현진' #"ㅜㅜㅜ"
 
 print(f'학번: {student_number}\n이름: {name}\n나이: {age}\n키: {height}')
 
