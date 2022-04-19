@@ -37,4 +37,44 @@ print(f'{student_number[-2:]}번') #start: end-1 [start:] 뒤에 숫자가 없�
 print(f'{student_number[0:-2]}학년반')
 print(f'{student_number[:-2]}학년반') #start : end-1 [:end - 1] = 앞까지 출력
 print(f'{student_number[:]}학년반') #start : end-1 [:] = 앞~끝 전부다 출력
-# #역행은 출력되지 않음
+#역행으로는 출력되지 않음
+
+#문자열 함수
+print(f'길이: {len(student_number)}') #길이를 알 수 있음
+print(f'2 개수: {student_number.count("2")}') #count 특정 문자열이 몇개가 있는지 알 수 있음
+print(f'{"nct dream darling".upper()}') #대문자로 바꿈
+print(f'{"NCT DREAM DARLING".lower()}') #소문자로 바꿈
+
+s = "    NCT dream buffering    "
+print(f'{s.strip()}') #양 옆에 띄어쓰기를 없앰
+print(f'{s.lstrip()}') #왼쪽 띄어쓰기를 없앰
+print(f'{s.rstrip()}') #오른쪽 ``
+
+print(f'{s.find("e")}') #[8]
+print(f'{s.find("z")}') #없으면 -1
+# print(f'{s.rfind("e")}')
+# print(f'{s.lfind("e")}')
+
+print(f'{s.index("d")}') # 8
+# print(f'{s.index("z")}') #없으면 ValueError
+
+print(f'{s.replace("bufferuing", "Hello Future")}') #replace하면 바뀐 문자열 리턴하지만 원본은 바뀌지 않음
+
+print('e' in s) #true
+print('z' in s) #False
+
+#split, join
+ip = '10.253.123.119'
+ip_list = ip.strip('.')
+print(ip_list)
+
+names = '양다연, 최자윤, 임채영, 이예진, 인소리'
+name_list = names.split(',')
+print(name_list)
+print(name_list[2])
+print(name_list[2:4])
+ip_list_str = '::'.join(ip_list)
+print(ip_list_str)
+name_list_str = '|'.join(name_list)
+print(name_list_str)
+print(",".join(name_list))
