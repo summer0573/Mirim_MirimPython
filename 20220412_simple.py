@@ -14,7 +14,6 @@ print('-'*20)
 
 #현재 날짜와 시각 보기
 import datetime
-
 now = datetime.datetime.now()
 print(now)
 print(now.year, now.month, now.day, now.hour, now.minute, now.second)
@@ -46,5 +45,4 @@ t.forward(100)
 t.right(144)
 t.forward(100)
 t.right(144)
-
 t.mainloop()

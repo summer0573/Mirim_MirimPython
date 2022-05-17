@@ -65,7 +65,7 @@ print('z' in s) #False
 
 #split, join
 ip = '10.253.123.119'
-ip_list = ip.strip('.')
+ip_list = ip.split('.')
 print(ip_list)
 
 names = '양다연, 최자윤, 임채영, 이예진, 인소리'
@@ -78,3 +78,14 @@ print(ip_list_str)
 name_list_str = '|'.join(name_list)
 print(name_list_str)
 print(",".join(name_list))
+
+#format
+s='name: {}, number: {}, soccer: {}'
+print(s.format('손흥민', 7, True))
+
+a='name: {1}, number: {2}, soccer: {0}'
+print(s.format('손흥민', 7, True))
+
+b='name: {me}, number: {n}, soccer: {s}'
+print(s.format(m='손흥민', n=7, s=True))
+

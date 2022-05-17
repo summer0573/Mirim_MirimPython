@@ -4,11 +4,11 @@ print(len(empty_list)) #0
 print(len(player)) #3
 
 print(type(empty_list), type(player))
-empty_list2 = list()
+empty_list2 = list() #[] 리스트화
 print(len(empty_list2)) #0
 
 message = list('miracle')
-print(message) #['m', 'i', 'r', 'a', 'c', 'l', 'e']
+print(message) #['m', 'i', 'r', 'a', 'c', 'l', 'e'] 한글자씩 정해짐
 # numbers = list(56) #TypeError: 'int' object is not iterable
 # print(numbers)
 print(player)
@@ -83,6 +83,7 @@ b = range(1,14+1) #시작숫자와 끝숫자
 print(list(b))
 c=range(1, 14+1, 2)
 print(list(c))
+#엄청 중요
 #range(stop):range(0,stop):0,1,2,...,stop-1
 #range(start, stop):start, start+1, start+2, ..., stop-1
 #range(start, stop, step): start, start+step, start+step+step, ..., stop-1
@@ -95,4 +96,4 @@ number=range(11, 99+1, 2)
 print(list(number))
 
 #한자리 숫자 중 짝수 숫자 거꾸로
-print(1, 9+1, 2)ㅏ
+print(list(range(8, 0, -2)))
