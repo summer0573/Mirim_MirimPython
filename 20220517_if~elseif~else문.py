@@ -65,7 +65,7 @@
 
 name = '정현진'
 id = 'hyunjinID'
-password = 'hyunjinPassword'
+password = '12345'
 id2=input('ID 입력 : ')
 password2=input('Password 입력 : ')
 if id == id2:
