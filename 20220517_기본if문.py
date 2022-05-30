@@ -31,7 +31,7 @@ input() = 입력함수
 #     print("택시를 타라")
 # else:
 #     print("버스를 타라")
-
+k
 # num = int(input('숫자 입력 : '))
 # if num % 2 == 0:
 #     print(f'{num}은 짝수입니다.')

@@ -62,7 +62,6 @@
 #         print('10초과 홀수')
 # else :
 #     print('10미만')
-
 name = '정현진'
 id = 'hyunjinID'
 password = '12345'
