@@ -35,18 +35,36 @@ print("="*20)
 
 #3. N-sum
 number = 331
-n1 = int(number % 1000 / 100)
-n2 = int(number % 100 / 10)
-n3 = int(number % 10)
+n1 = number % 1000 // 100
+n2 = number % 100 // 10
+n3 = number % 10
 print(n1+n2+n3)
 
-number = 53461
-n1 = int(number % 100000 / 10000)
-n2 = int(number % 10000 / 1000)
-n3 = int(number % 1000 / 100)
-n4 = int(number % 100 / 10)
-n5 = int(number % 10)
-print(n1+n2+n3+n4+n5)
+number = 523523
+sum_value = 0
+while True:
+    if number == 0:
+        break
+    sum_value += number % 10
+    number = number // 10
+print(sum_value)
+
+number_s = str(number) # '523523'
+sum_val2 = 0
+for n in number_s:
+    sum_val2 += int(n)
+print(sum_val2)
+
+#나머지 = number % 10            3
+#number = number // 10          52352
+# 나머지 = number % 10           2
+# number = number // 10         5235
+# 나머지 = number % 10           5
+# number = number // 10        523
+# 나머지 = number % 10           3
+# number = number // 10         52
+# 나머지 = number % 10           2
+# number = number // 10         5
 
 print("="*20)
 
