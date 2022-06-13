@@ -68,9 +68,14 @@ print(sum_val2)
 
 print("="*20)
 
-#4. 369게임
-# for i in range(1, 100+1):
-#     if i == 3 or i == 6 or i == 9:
-#         print(" 짝 ")
-#     else:
-#         print(f' {i} ')
+
+for i in range(1, 100+1):
+    number_s = str(i)
+    count = 0
+    for ch in number_s:
+        if ch == '3' or ch == '6' or ch =='9':
+            count += 1
+    if count == 0:
+        print(i)
+    else:
+        print("짝"*count)
