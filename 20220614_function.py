@@ -68,3 +68,10 @@ def my_print5(name, *args): #args 자료형은 tuple
         print(arg)
 my_print5('이용복', 22, '스트레이키즈', '매니악')
 my_print5('황현진', 22, '스트레이키즈', '매니악')
+
+print('='*20)
+
+# def my_print4(name, age=20, group): #기본값 있는 파라미터 뒤에는 무조건 기본값있는 파라미터
+#     print(name + '은 '+ str(age)+'살입니다. ' + group + ' 소속입니다.')
+#     print(name,'은',age,'살입니다.',group,'소속입니다.')
+#     print(f'{name}은 {age}살입니다. {group} 소속입니다.')
