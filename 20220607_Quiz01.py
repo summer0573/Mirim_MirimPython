@@ -83,7 +83,7 @@
 #gugudan 구구단 2단 출력하자
 #gugudan 5단 출력
 
-def gugudan(dan):
+def gugudan(dan=2):
     for i in range(1, 9 + 1):
         print(f'{dan} x {i} = {dan*i}')
 
