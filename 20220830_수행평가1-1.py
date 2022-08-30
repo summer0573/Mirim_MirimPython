@@ -14,6 +14,3 @@ def sum_odd(phone_number):
 
 result = sum_odd('01072404658')
 print((result))
-
-def sum_odd2(phone_number) :
-    return sum([int(number) for number in phone_number if int(number) % 2 != 0])
