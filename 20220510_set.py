@@ -3,7 +3,7 @@ print(games) #집합은 인덱스로 가져올 수 없다.
 empty_set = {} #빈 딕셔너리
 empty_set = set() # 빈 셋
 print(set({'goole': 'goole.com', 18: 'unesco.org'}))
-
+34444444
 #요소 추가
 games.add("테일즈런너")
 print(games)

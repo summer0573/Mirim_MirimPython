@@ -12,7 +12,7 @@ color = 129, 247, 216 # = 패킹
 red, green, blue = color # = 언패킹
 print(red)
 x, y =(1920, 1080)
-print(y) #1080
+print(y) #1080;
 print(color[1]) #인덱싱
 print(color[0:2]) #슬라이싱
 # color[1] = 255 / 에러남 값을 넣으면 다시 넣거나 바꾸는 기능을 지원하지 않은다.
