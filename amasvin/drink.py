@@ -29,20 +29,40 @@ class Drink:
         당도 : {Drink._SUGARS[self.sugar]}\t얼음량 : {Drink._ICES[self.ice]}'
 
     def set_cup_size(self):
-        #사용자에게 숫자를 묻자 1 : 레귤러, 2 : 점보
+        # 사용자에게 숫자를 묻자 1 : 레귤러, 2 : 점보
         for index, cup_size_label in enumerate(Drink._CUP_SIZES):
             print(f'{index + 1} : {cup_size_label}')
         cup_size = input('컵사이즈를 선택하세요 : ')
-        if cup_size == '':#그냥 엔터치면 기본값 넣기
+        if cup_size == '':  # 그냥 엔터치면 기본값 넣기
             self.cup_size = 0
         else:
             self.cup_size = int(cup_size) - 1
-        #self.cup_size가 점보일때, self.price += 500원
+        # self.cup_size가 점보일때, self.price += 500원
         if self.cup_size == 1:
             self.price += 500
 
+    def set_sugar(self):
+        for index, sugar_label in enumerate(Drink._SUGARS):
+            print(f'{index + 1} : {sugar_label}')
+        sugar = input('당도를 선택하세요 : ')
+        if sugar == '':  # 그냥 엔터치면 기본값 넣기
+            self.sugar = 1
+        else:
+            self.sugar = int(sugar) - 1
 
+    def set_ice(self):
+        for index, ice_label in enumerate(Drink._ICES):
+            print(f'{index + 1} : {ice_label}')
+        ice = input('얼음량을 선택하세요 : ')
+        if ice == '':  # 그냥 엔터치면 기본값 넣기
+            self.ice = 2
+        else:
+            self.ice = int(ice) - 1
+    def order(self):
+        self.set_cup_size()
+        self.set_sugar()
+        self.set_ice()
 
 drink1 = Drink('아메리카노', 1800)
-drink1.set_cup_size()
+drink1.order()
 print(drink1)
