@@ -6,7 +6,7 @@ class BubbleTea(Drink):
 
     def __init__(self,name, price):
         super().__init__(name, price) #시험 부모의 생성자를 호추라기
-        self.set_pearl = 0;
+        self.set_pearl = 0
     def __str__(self):
         return f'\n펄 : {BubbleTea._PEARLS[self.pearl()]}'
 
@@ -25,6 +25,6 @@ class BubbleTea(Drink):
         self.set_pearl()
 
 
-bubbletea1 = BubbleTea("순수우유 쉐이크", 3900)
-bubbletea1.order()
-print(bubbletea1)
+버블티1 = BubbleTea("초코 버블티", 3800)
+버블티1.order()
+print(버블티1)
