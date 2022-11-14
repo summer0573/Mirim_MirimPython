@@ -24,7 +24,7 @@ class BubbleTea(Drink):
         super().order()
         self.set_pearl()
 
-
-버블티1 = BubbleTea("초코 버블티", 3800)
-버블티1.order()
-print(버블티1)
+if __name__ == '__main__': #*****
+    버블티1 = BubbleTea("초코 버블티", 3800)
+    버블티1.order()
+    print(버블티1)
