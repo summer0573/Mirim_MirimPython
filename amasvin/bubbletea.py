@@ -1,7 +1,7 @@
 from drink import Drink
 
 
-class BubbleTea(Drink):
+class Bubbletea(Drink):
     # 클래스변수
     _PEARLS = ('타피오카', '코코', '알로에', '곤약')
 
@@ -11,11 +11,11 @@ class BubbleTea(Drink):
 
     def __str__(self):
         return super().__str__() \
-               + f'\t펄: {BubbleTea._PEARLS[self.pearl]} 펄'
+               + f'\t펄: {Bubbletea._PEARLS[self.pearl]} 펄'
 
     def set_pearl(self):
         # 펄 종류 출력하자 1. ~, 2. ~
-        for index, pearl in enumerate(BubbleTea._PEARLS):
+        for index, pearl in enumerate(Bubbletea._PEARLS):
             print(f'{index + 1}. {pearl} 펄')  # 1. 타피오카 펄, ...
         # 사용자에게 입력받자
         pearl = input("펄을 선택하세요: ")
@@ -34,6 +34,6 @@ class BubbleTea(Drink):
 
 
 if __name__ == '__main__':  # *****
-    버블티1 = BubbleTea('타로버블티', 3700)
+    버블티1 = Bubbletea('타로버블티', 3700)
     버블티1.order()
     print(버블티1)

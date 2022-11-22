@@ -4,17 +4,25 @@ urls={'goole':'goole.com', 18:'unesco.org'}
 print(d)
 print(urls)
 
+print('=========================================')
+
 #요소 추가
 urls['유튜브'] = 'youtube.com' #{'goole': 'goole.com', 18: 'unesco.org', '유튜브': 'youtube.com'}
 print(urls)
+
+print('=========================================')
 
 #요소 수정
 urls['goole'] = 'goole.co.kr'
 print(urls) #{'goole': 'goole.co.kr', 18: 'unesco.org', '유튜브': 'youtube.com'}
 
+print('=========================================')
+
 #요소 출력
 print(urls['goole'])
 print(urls[18]) #18:키 인덱스의 18과 딕셔너리의 18은 다르다.
+
+print('=========================================')
 
 #요소 제거
 del urls['유튜브']
@@ -22,6 +30,8 @@ print(urls)
 #urls.pop()
 urls.pop(18) #key 값을 안주면 에러남
 print(urls) #{'goole': 'goole.co.kr'}
+
+print('=========================================')
 
 birthdays = {'다연': 5, '자윤' : 11}
 birthdays_list = [5, 11]
