@@ -1,5 +1,5 @@
 import hello2
-import hello_func
+import hello_func as hf
 
-hello_func.hello()
-hello_func.hello()
+
+hf.hello()
